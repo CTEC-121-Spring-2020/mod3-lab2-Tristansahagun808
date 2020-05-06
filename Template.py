@@ -1,7 +1,7 @@
 """
 CTEC 121
-<your name>
-<assignment/lab name>
+<Tristan Sahagun>
+<Module 3 Lab 2>
 <assignment/lab description
 """
 
@@ -12,6 +12,16 @@ Output: return value and description
 """
 
 def main():
-    # code here
+    try:
+        print(4/0)
+    except ZeroDivisionError:
+        print("\nDivision by zero is impossible, Exiting\n")
+        exit
+    except TypeError:
+        print("Type Error")
+        exit
+    except:
+        print("Unknown Error")
+        exit
 
 main()    
